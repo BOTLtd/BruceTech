@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bruce Tech — Lead Technician (Data • Camera • Networking)</title>
+  <meta name="description" content="Portfolio of Bruce Tech — projects, team, partners and contact." />
+  <style>
+    :root{--accent:#0ea5a4;--bg:#0f172a;--card:#0b1220;--muted:#94a3b8;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;background:linear-gradient(180deg,#071024 0%, #071122 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:1100px;margin:32px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .brand{display:flex;gap:16px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:14px;overflow:hidden;flex-shrink:0;border:3px solid var(--accent)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:6px 0;color:var(--muted)}
+    .nav{margin-left:auto}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    main{margin-top:28px}
+    .grid{display:grid;gap:18px}
+    .projects{grid-template-columns:repeat(2,1fr)}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .project-image{width:100%;height:160px;border-radius:10px;overflow:hidden;margin-bottom:10px}
+    .project-image img{width:100%;height:100%;object-fit:cover}
+    .meta{display:flex;justify-content:space-between;align-items:center;font-size:0.9rem;color:var(--muted)}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{padding:6px 8px;border-radius:999px;background:var(--glass);font-size:0.8rem}
+    .team{display:flex;gap:12px;flex-wrap:wrap}
+    .person{width:calc(33.333% - 8px);min-width:200px}
+    .person .photo{width:100%;height:220px;border-radius:10px;overflow:hidden}
+    .person img{width:100%;height:100%;object-fit:cover}
+    .partners{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .partner{background:rgba(255,255,255,0.02);padding:10px;border-radius:8px;min-width:120px;text-align:center}
+    footer{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:space-between}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#021; text-decoration:none;font-weight:600}
+    @media (max-width:900px){.projects{grid-template-columns:1fr}.person{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&crop=faces" alt="Bruce Tech">
+        </div>
+        <div>
+          <h1>Bruce Tech</h1>
+          <p class="lead">Lead Technician — Data, Camera Systems & Networking<br>Building resilient systems, capture workflows, and clean data pipelines.</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#team">Team</a>
+        <a href="#partners">Partners</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="projects" class="grid projects">
+        <div class="card">
+          <div class="project-image"><img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?q=80&w=1600&auto=format&fit=crop" alt="City surveillance deployment"></div>
+          <h3>City Surveillance & Analytics</h3>
+          <p class="meta"><span>Role: Lead Systems Integrator</span><span>2024</span></p>
+          <p>Designed and deployed a 40-camera network across municipal districts with edge analytics for traffic and incident detection. Responsibilities included camera selection, PoE networking, storage architecture and anonymized data pipelines.</p>
+          <div class="tags"><span class="tag">Cameras</span><span class="tag">Networking</span><span class="tag">Edge AI</span></div>
+        </div>
+
+        <div class="card">
+          <div class="project-image"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop" alt="Wildlife camera trap system"></div>
+          <h3>Wildlife Monitoring — Remote Camera Traps</h3>
+          <p class="meta"><span>Role: Technical Lead</span><span>2023</span></p>
+          <p>Built battery-efficient camera trap clusters with solar charging, robust mesh networking, and an automated ingestion pipeline into a central database for species recognition and temporal analysis.</p>
+          <div class="tags"><span class="tag">Low-power</span><span class="tag">IoT</span><span class="tag">Data ETL</span></div>
+        </div>
+
+        <div class="card">
+          <div class="project-image"><img src="https://images.unsplash.com/photo-1526378723581-6a5b0b8b1a5b?q=80&w=1600&auto=format&fit=crop" alt="Retail store analytics"></div>
+          <h3>Retail Footfall & POS Integration</h3>
+          <p class="meta"><span>Role: Systems Architect</span><span>2022</span></p>
+          <p>Integrated in-store cameras with POS systems to correlate footfall, heatmaps and sales. Built dashboards for store managers and anonymized reporting for corporate analytics.</p>
+          <div class="tags"><span class="tag">Analytics</span><span class="tag">POS</span><span class="tag">Dashboards</span></div>
+        </div>
+
+        <div class="card">
+          <h3>Custom Data Services & Consulting</h3>
+          <p class="meta"><span>Role: Consultant</span><span>Ongoing</span></p>
+          <p>Deliver consulting on network architecture, camera selection, firmware management and setting up automated ETL pipelines into cloud or on-prem data warehouses.</p>
+          <div class="tags"><span class="tag">Consulting</span><span class="tag">ETL</span><span class="tag">Networking</span></div>
+        </div>
+      </section>
+
+      <section id="team" style="margin-top:22px">
+        <h2>Team</h2>
+        <div class="team">
+          <div class="person card">
+            <div class="photo"><img src="https://images.unsplash.com/photo-1545996124-1a5f6b2b4f42?q=80&w=1200&auto=format&fit=crop&crop=faces" alt="Bruce Tech"></div>
+            <h4>Bruce Tech — Lead Technician</h4>
+            <p class="meta">Expertise: Camera systems, networking, data pipelines</p>
+            <p>15+ years building end-to-end systems, from field hardware to cloud ingestion and analytics.</p>
+          </div>
+
+          <div class="person card">
+            <div class="photo"><img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1200&auto=format&fit=crop&crop=faces" alt="Aisha N."></div>
+            <h4>Aisha N. — Data Engineer</h4>
+            <p class="meta">Expertise: ETL, databases, dashboards</p>
+            <p>Designs reliable ingestion pipelines and maintains data quality checks and warehouse schemas.</p>
+          </div>
+
+          <div class="person card">
+            <div class="photo"><img src="https://images.unsplash.com/photo-1544005313-1bf5b1c5b7b6?q=80&w=1200&auto=format&fit=crop&crop=faces" alt="Samuel K."></div>
+            <h4>Samuel K. — Field Network Engineer</h4>
+            <p class="meta">Expertise: PoE, wireless mesh, security</p>
+            <p>Handles deployment, cabling, and on-site troubleshooting for complex camera networks.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" style="margin-top:22px">
+        <h2>Partners</h2>
+        <div class="partners">
+          <div class="partner"><strong>Acme CCTV</strong><div style="font-size:0.9rem;color:var(--muted)">Hardware & cameras</div></div>
+          <div class="partner"><strong>NetWave</strong><div style="font-size:0.9rem;color:var(--muted)">Networking solutions</div></div>
+          <div class="partner"><strong>DataForge</strong><div style="font-size:0.9rem;color:var(--muted)">Cloud analytics</div></div>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:22px">
+        <h2>Contact</h2>
+        <div class="card">
+          <p>If you'd like to discuss a project, consulting or partnerships, reach out:</p>
+          <p class="meta">Email: <a href="mailto:bruce@brucetech.example" style="color:var(--accent)">bruce@brucetech.example</a> — Phone: +250 7XX XXX XXX</p>
+          <p>Showcase & code available on GitHub. Want this deployed to a github.io site? Follow the instructions below.</p>
+          <ol>
+            <li>Create a new GitHub repository named <code>USERNAME.github.io</code> (replace USERNAME)</li>
+            <li>Commit this file as <code>index.html</code> to the repository's main branch</li>
+            <li>Go to Settings → Pages and ensure site source is set to the main branch (root). The site will become available at <code>https://USERNAME.github.io</code></li>
+          </ol>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <strong>Bruce Tech</strong> — Lead Technician</div>
+      <div style="font-size:0.9rem;color:var(--muted)">Built with care • Need edits? Hit reply</div>
+    </footer>
+  </div>
+</body>
+</html>
